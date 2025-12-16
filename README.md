@@ -71,9 +71,9 @@ Each query has two stages:
 * A batch can include multiple queries up to a global **token capacity** (`batch_cap`).
 * Batch service time uses the deterministic affine model:
 
-[
-S(b) ;=; c ;+; a \cdot \max(0,, b - b_0)
-]
+  $$
+  S(b) = c + a \cdot \max(0,\, b - b_0)
+  $$
 
 ### **Scheduling Policies**
 
